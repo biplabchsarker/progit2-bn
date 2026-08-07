@@ -1,0 +1,12 @@
+extends: default
+font:
+  catalog:
+    Noto Serif Bengali:
+      normal: NotoSerifBengali-Regular.ttf
+      bold: NotoSerifBengali-Bold.ttf
+      italic: NotoSerifBengali-Regular.ttf
+      bold_italic: NotoSerifBengali-Bold.ttf
+base:
+  font-family: Noto Serif Bengali
+heading:
+  font-family: Noto Serif Bengali
