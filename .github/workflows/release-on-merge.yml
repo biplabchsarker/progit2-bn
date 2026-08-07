@@ -4,9 +4,17 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   release:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
     - uses: actions/checkout@v4
       with:
@@ -36,3 +44,17 @@ jobs:
         tag: ${{ steps.compute-tag.outputs.tagname }}
         commit: main
         artifacts: './progit.epub,./progit.fb2.zip,./progit.mobi,./progit.pdf,./progit.html'
+
+    - name: Prepare Pages content
+      run: |
+        mkdir -p _site
+        cp progit.html _site/index.html
+
+    - name: Upload Pages artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: _site
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
