@@ -64,6 +64,17 @@
 | Setup (noun, "a small setup") | সেটআপ | verb হিসেবে "সেট আপ করা" আগে থেকেই ব্যবহৃত; noun রূপও একই শব্দ |
 | Interface | ইন্টারফেস | প্রচলিত loanword |
 | Administration | অ্যাডমিনিস্ট্রেশন | প্রচলিত loanword |
+| Organization (GitHub-এর top-level org unit) | অর্গানাইজেশন | GitLab-এর Group → গ্রুপ প্যাটার্নের সাথে সামঞ্জস্য রেখে |
+| Account | অ্যাকাউন্ট | অত্যন্ত প্রচলিত loanword |
+| Notification | নোটিফিকেশন | প্রচলিত loanword |
+| Token | টোকেন | প্রচলিত loanword |
+| Avatar | অ্যাভাটার | প্রচলিত loanword |
+| Profile | প্রোফাইল | প্রচলিত loanword |
+| Team | টিম | Group/Organization-এর মতোই org-concept noun |
+| Subgroup | উপগ্রুপ | বাংলা "উপ-" prefix + Group |
+| Member | সদস্য | সাধারণ noun, native বাংলা শব্দ |
+| Snippet | স্নিপেট | প্রচলিত loanword (কোড স্নিপেট) |
+| Emoji | ইমোজি | প্রচলিত loanword |
 
 ## English/Latin Script-এই থাকবে
 
@@ -92,6 +103,23 @@
 | Namespace | কম ব্যবহৃত internals/GitLab টার্ম, blob/tree-র মতো একই ক্যাটেগরি |
 | Wiki | GitLab UI-তে exact এই বানানেই দেখা যায়, GitHub UI টার্মের (Issues, Settings...) মতোই |
 | Merge Request | GitLab-এর pull request-এর সমতুল্য UI টার্ম — Pull Request-এর মতোই কারণে ইংরেজিতেই থাকবে |
+| Markdown | মার্কআপ ল্যাংগুয়েজের proper name |
+| API | universal tech acronym |
+| Settings | GitHub UI-তে exact এই বানানেই দেখা যায় (নিয়ম ১৭) |
+| Webhook | নির্দিষ্ট mechanism-এর নাম, Hook-এর মতোই ক্যাটেগরি |
+| Two-factor (Authentication) | নির্দিষ্ট security feature-এর নাম, Detached HEAD-এর মতোই ক্যাটেগরি — "Two-factor অথেনটিকেশন" (compound rule অনুযায়ী) |
+| Watch (GitHub action, repo notifications subscribe করা) | Fork/Issue-এর মতোই নির্দিষ্ট UI action-এর নাম |
+| Owner / Co-owner / Collaborator (project role) | Maintainer/Contributor-এর মতোই project-role noun ক্যাটেগরি — "Collaborators" GitHub-এর একটা literal menu-tab-এর নামও |
+| Audit Log | literal UI tab-এর নাম, quote করে refer করা হয় |
+| Task List | GitHub-এর নির্দিষ্ট feature-এর নাম |
+| Mention (@mention feature) | নির্দিষ্ট UI action-এর নাম, Watch/Fork-এর মতোই |
+| Ref / Refspec | low-level Git plumbing টার্ম, blob/tree/index-এর মতোই ক্যাটেগরি |
+| Literal GitHub UI button/tab label (যেমন "New repository", "Add webhook", "Transfer ownership") | অনুবাদ না করে ইংরেজিতেই রাখুন, যাতে ইউজার আসল GitHub interface-এ সেটা খুঁজে পান — নিয়ম ১৭-এর সম্প্রসারণ |
+| Access level label (read only / read-write / administrative-এর মতো literal permission label) | literal UI label হিসেবে ইংরেজিতেই থাকবে |
+| Administrative (adjective form of Administration) | প্রশাসনিক — noun রূপ "অ্যাডমিনিস্ট্রেশন" ইংরেজি-বেসড থাকলেও adjective রূপ native বাংলা |
+| Sign up / Log in (verb) | ইংরেজি verb + করা প্যাটার্নেই থাকবে ("sign up করা", "log in করা") — "সাইন আপ" transliterate করা হয়নি |
+| Verified / Unverified | ভেরিফাই করা / "ভেরিফাই করা হয়নি" (phrase, আলাদা "আন-" শব্দ বানানো হয়নি — Authenticated/Unauthenticated প্যাটার্নের সাথে সামঞ্জস্য) |
+| Configuration (noun) / Configure (verb) | কনফিগারেশন (noun, transliterate) / "কনফিগার করা" (verb, English+করা) |
 | Fork | GitHub/GitLab UI-র একটা নির্দিষ্ট action-এর নাম, Pull/Merge Request-এর মতোই ক্যাটেগরি |
 | Issue | GitHub/GitLab UI টার্ম, Wiki-র মতোই ক্যাটেগরি (lowercase-এই লেখা হয়, যেমন "issue তৈরি করা") |
 | Access (standalone noun/verb, "SSH access", "access দেওয়া") | write access/read access/push access কম্পাউন্ডের precedent বাড়িয়ে standalone ব্যবহারেও প্রযোজ্য |
@@ -145,3 +173,4 @@
 - **2026-08-07 (chapter 4 prep)** — Chapter 4 (Git on the Server) অনুবাদ শুরুর আগে নতুন টার্ম যোগ করা হয়েছে: Protocol, Authentication, Group, Port, Firewall (transliterate); Daemon, Hook, SSH, Public/Private key, Passphrase, Namespace, Wiki, Merge Request (English-ই থাকবে)। প্যারালাল agent দিয়ে অনুবাদ করার আগে decide করে রাখা হয়েছে, যাতে আলাদা agent আলাদা সিদ্ধান্ত না নেয়।
 - **2026-08-07 (chapter 4 অনুবাদের পর)** — অনুবাদ করার সময় agent-রা যে নতুন টার্ম নিয়ে সিদ্ধান্ত নিয়েছিল, সেগুলো consolidate করে যোগ করা হলো: Server, Service, Setup, Interface, Administration (transliterate); Fork, Issue, Access (standalone), Shell/git-shell, CGI, Instance (English-ই থাকবে); Authenticated/Unauthenticated adjective form। একটা inconsistency ধরা পড়েছিল ("instance" একটা ফাইলে transliterate হয়েছিল, বাকি দুটোয় English ছিল) — majority-এর সাথে মিলিয়ে ঠিক করা হয়েছে।
 - **2026-08-07 (chapter 5 prep)** — Chapter 5 (Distributed Git) অনুবাদ শুরুর আগে ইতিমধ্যে shipped chapter 1-4-এ real precedent চেক করে দেখা গেল Patch, Contributor, Review, Workflow, Release — এই সবগুলোই আগে থেকে English-এ রয়ে গেছে (transliterate করার প্রাথমিক ধারণা ভুল ছিল)। এই precedent মেনে Maintainer, Guideline, Mailing List, Squash, Whitespace, Shortlog, Changelog, Build Number, Dictator and Lieutenants, format-patch/mbox — সবই English-ই রাখা হলো, নতুন করে transliterate না করে।
+- **2026-08-07 (chapter 6 prep + পরে)** — Chapter 6 (GitHub) অনুবাদের আগে Organization, Account, Notification, Token, Avatar, Profile (transliterate) আর Markdown, API, Settings, Webhook, Two-factor, Watch (English) prep করা হয়েছিল। অনুবাদের সময় আরও কিছু যোগ হয়েছে: Team, Subgroup, Member, Snippet, Emoji (transliterate); Owner/Co-owner/Collaborator, Audit Log, Task List, Mention, Ref/Refspec, literal UI button/tab label, access-level label, Sign up/Log in verb, Verified/Unverified, Configuration/Configure noun-verb split (English)।
