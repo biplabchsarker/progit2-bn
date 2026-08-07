@@ -74,6 +74,8 @@ Don't translate sentence-by-sentence. Ask: "How would I explain this concept to 
 
 Don't merge or split paragraphs unnecessarily — this keeps future synchronization with the English source easy to diff.
 
+Preserve paragraph boundaries unless a direct Bangla translation would become significantly unnatural. This gives translators a little flexibility without sacrificing maintainability — it's a narrow exception, not a license to restructure freely.
+
 ## 13. Do Not Change Examples
 
 Keep example names (John, Alice, Bob) and identifiers (`origin`, `master`, `main`) unchanged unless the upstream English project later updates them.
