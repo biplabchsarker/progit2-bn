@@ -75,6 +75,7 @@
 | Member | সদস্য | সাধারণ noun, native বাংলা শব্দ |
 | Snippet | স্নিপেট | প্রচলিত loanword (কোড স্নিপেট) |
 | Emoji | ইমোজি | প্রচলিত loanword |
+| Export (verb, `git archive`-এর প্রসঙ্গে) | এক্সপোর্ট করা | কনফিগার করা/অথেনটিকেট করা-র মতোই loanword-transliteration প্যাটার্ন |
 
 ## English/Latin Script-এই থাকবে
 
@@ -161,6 +162,16 @@
 | Username / Password | Chapter 3/4/6-এ প্রতিষ্ঠিত precedent অনুযায়ী transliterate — ইউজারনেম / পাসওয়ার্ড |
 | Annotation (file annotation, `git blame`-এর প্রসঙ্গে) | কম ব্যবহৃত internals টার্ম, blob/tree-র মতোই ক্যাটেগরি |
 | Grafting (history grafting) | নির্দিষ্ট টেকনিক্যাল mechanism-এর নাম, একই ক্যাটেগরি |
+| Attribute (gitattributes) | নির্দিষ্ট Git feature-এর নাম, `.gitattributes` লিটারাল ফাইলের সাথে ওভারল্যাপ, Hook/Daemon-এর মতোই ক্যাটেগরি |
+| Filter / Filter Driver (clean/smudge filter) | নির্দিষ্ট Git mechanism-এর নাম (gitattributes-এর filter attribute), Hook-এর মতোই ক্যাটেগরি — generic verb ব্যবহারে ("author দিয়ে ফিল্টার করা", chapter 2 precedent) transliterate থাকবে, কিন্তু এই নির্দিষ্ট mechanism-এর নাম হিসেবে English |
+| Merge Driver / Diff Driver | Filter Driver-এর মতোই নির্দিষ্ট mechanism-এর নাম, English |
+| Policy | Chapter 5-এ (contributing.asc) থেকেই English-এ প্রতিষ্ঠিত precedent |
+| Environment Variable | Chapter 2/4-এ (recording-changes.asc, smart-http.asc) থেকেই English-এ প্রতিষ্ঠিত precedent |
+| Line Ending (CRLF/LF) | নির্দিষ্ট টেকনিক্যাল টার্ম, Whitespace-এর মতোই ক্যাটেগরি, English |
+| Keyword Expansion | নির্দিষ্ট Git mechanism-এর নাম, Filter Driver-এর মতোই ক্যাটেগরি |
+| Template Directory (`git init` templates) | নির্দিষ্ট Git mechanism-এর নাম, একই ক্যাটেগরি |
+| Mechanism / Argument / Directive | কম ব্যবহৃত generic CS/internals noun, blob/tree-র মতোই ক্যাটেগরি |
+| Caveat / Exercise / Incantation | ক্যাজুয়াল টেকনিক্যাল প্রসঙ্গ (Scott Chacon-এর কণ্ঠস্বর, নিয়ম ২২), English-ই থাকবে |
 
 ## Compound/Derived টার্ম
 
@@ -196,4 +207,6 @@
 - **2026-08-07 (chapter 5 prep)** — Chapter 5 (Distributed Git) অনুবাদ শুরুর আগে ইতিমধ্যে shipped chapter 1-4-এ real precedent চেক করে দেখা গেল Patch, Contributor, Review, Workflow, Release — এই সবগুলোই আগে থেকে English-এ রয়ে গেছে (transliterate করার প্রাথমিক ধারণা ভুল ছিল)। এই precedent মেনে Maintainer, Guideline, Mailing List, Squash, Whitespace, Shortlog, Changelog, Build Number, Dictator and Lieutenants, format-patch/mbox — সবই English-ই রাখা হলো, নতুন করে transliterate না করে।
 - **2026-08-07 (chapter 6 prep + পরে)** — Chapter 6 (GitHub) অনুবাদের আগে Organization, Account, Notification, Token, Avatar, Profile (transliterate) আর Markdown, API, Settings, Webhook, Two-factor, Watch (English) prep করা হয়েছিল। অনুবাদের সময় আরও কিছু যোগ হয়েছে: Team, Subgroup, Member, Snippet, Emoji (transliterate); Owner/Co-owner/Collaborator, Audit Log, Task List, Mention, Ref/Refspec, literal UI button/tab label, access-level label, Sign up/Log in verb, Verified/Unverified, Configuration/Configure noun-verb split (English)।
 - **2026-08-07 (chapter 7-এর পর)** — অনুবাদের সময় agent-রা আরও কিছু judgment call নিয়েছিল, consolidate করে যোগ করা হলো: Staged/Unstaged/Untracked (adjective/state-label, English — Stage verb থেকে আলাদা), Unstage (verb, "unstage করা"), Username/Password (transliterate, precedent-confirmed), Annotation, Grafting (English, internals-category)।
+- **2026-08-08 (chapter 8-এর পর)** — অনুবাদের সময় আরও কিছু judgment call consolidate করা হলো: Export (verb, "এক্সপোর্ট করা", transliterate); Mechanism/Argument/Directive (English, internals-noun ক্যাটেগরি); Caveat/Exercise/Incantation (English, Scott Chacon-এর ক্যাজুয়াল কণ্ঠস্বর)।
+- **2026-08-07 (chapter 8 prep)** — Chapter 8 (Customizing Git) অনুবাদ শুরুর আগে chapter 1-6-এ real precedent চেক করে Policy, Environment Variable-কে English-এ প্রতিষ্ঠিত পাওয়া গেছে। নতুন টার্ম Attribute, Filter/Filter Driver, Merge Driver/Diff Driver, Line Ending, Keyword Expansion, Template Directory — সবই Hook/Daemon-এর প্যাটার্নে English রাখা হলো (নির্দিষ্ট Git feature/mechanism-এর নাম)।
 - **2026-08-07 (chapter 7 prep)** — Chapter 7 (Git Tools) অনুবাদ শুরুর আগে chapter 1-6-এর shipped টেক্সটে real precedent চেক করে Credential, Hash/SHA-1, Hunk, Stash, GPG/Signature/Sign, Rerere — সবই English-এ প্রতিষ্ঠিত পাওয়া গেছে। নতুন টার্ম (আগে আসেনি) — Submodule, Subtree, Bisect, Blame, Bundle, Reflog, Worktree, Revision, Replace — সবই Checkout/Rebase/Daemon-এর প্যাটার্নে English রাখা হলো (নির্দিষ্ট Git feature/command-এর নাম)। Compound টার্ম Interactive Staging → "Interactive স্টেজিং" যোগ করা হয়েছে (Staging Area/Stage verb precedent অনুযায়ী)। PDF Bengali font থিম ফিক্স (theme/pdf/) deprioritize করা হয়েছে — `progit.asc`-এর `:pdf-theme:`/`:pdf-fontsdir:` অ্যাট্রিবিউট revert করে default build pipeline আবার সচল করা হয়েছে; থিম/ফন্ট ফাইলগুলো ভবিষ্যতের জন্য repo-তে থেকে যাচ্ছে।
