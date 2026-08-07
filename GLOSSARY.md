@@ -54,6 +54,11 @@
 | Developer | ডেভেলপার | |
 | Open Source | ওপেন সোর্স | |
 | Version Control | Version Control (ভার্সন কন্ট্রোল) | প্রথমবার উভয় ফর্ম দিন (নিয়ম ৬ দেখুন), এরপর যেকোনো একটা ফর্ম সামঞ্জস্যপূর্ণভাবে ব্যবহার করুন |
+| Protocol | প্রোটোকল | Chapter 4-এ high-frequency core noun (SSH প্রোটোকল, HTTP প্রোটোকল...); অত্যন্ত প্রচলিত বাংলা loanword |
+| Authentication | অথেনটিকেশন | সাধারণ security concept noun, conflict/snapshot-এর মতো একই ক্যাটেগরি |
+| Group (GitLab-এর top-level org unit, Project-এর মতোই) | গ্রুপ | Project → প্রজেক্ট প্যাটার্নের সাথে সামঞ্জস্য রেখে |
+| Port (network port) | পোর্ট | অত্যন্ত প্রচলিত বাংলা loanword |
+| Firewall | ফায়ারওয়াল | প্রচলিত বাংলা loanword |
 
 ## English/Latin Script-এই থাকবে
 
@@ -74,6 +79,14 @@
 | config / alias | |
 | Index (staging area-র টেকনিক্যাল নাম) | সাধারণ প্রসঙ্গে "স্টেজিং এরিয়া"-ই ব্যবহার করুন; Git-এর টেকনিক্যাল নাম হিসেবে ব্যাখ্যা করার সময়ই শুধু ইংরেজি quote-এ "`index`" ব্যবহার করুন (দেখুন what-is-git.asc) |
 | blob / tree (Git internal object types) | কম ব্যবহৃত internals টার্ম, glossary-তে কভার করা হয়নি বলে English-ই থাকবে — যেমন `nutshell.asc`-এ "একটা commit আর তার _blob_/_tree_" |
+| Daemon | `git daemon` লিটারাল কমান্ডের সাথে ওভারল্যাপ করে বলে prose-এও English-ই থাকবে — section title "Git Daemon" অপরিবর্তিত |
+| Hook | নির্দিষ্ট Git mechanism-এর নাম (pre-commit hook, post-receive hook...), Checkout/Rebase-এর মতো একই ক্যাটেগরি — ch08-এ আবার আসবে |
+| SSH | প্রোটোকল/technology-র নাম হিসেবে সবসময় ইংরেজি acronym |
+| Public key / Private key | "key" শব্দটার বাংলা ("কী") "কী?" (what?)-এর সাথে হুবহু এক বানান — বিভ্রান্তি এড়াতে পুরো phrase ইংরেজিতেই থাকবে |
+| Passphrase | password-এর থেকে আলাদা একটা SSH-specific টার্ম — বাংলায় transliterate করলে ওই পার্থক্যটা হারিয়ে যায় |
+| Namespace | কম ব্যবহৃত internals/GitLab টার্ম, blob/tree-র মতো একই ক্যাটেগরি |
+| Wiki | GitLab UI-তে exact এই বানানেই দেখা যায়, GitHub UI টার্মের (Issues, Settings...) মতোই |
+| Merge Request | GitLab-এর pull request-এর সমতুল্য UI টার্ম — Pull Request-এর মতোই কারণে ইংরেজিতেই থাকবে |
 
 ## Compound/Derived টার্ম
 
@@ -103,3 +116,4 @@
 
 - **2026-08-07** — প্রাথমিক glossary তৈরি; chapter 1-3 নতুন convention অনুযায়ী retrofit করা হয়েছে। Fetch, Working Directory, এবং Stage (verb)-এর এন্ট্রি existing প্যাটার্নের সাথে সামঞ্জস্য রেখে যোগ করা হয়েছে।
 - **2026-08-07 (v1.0)** — Glossary freeze করা হলো। "Decision Rationale" সেকশন আর "Compound/Derived টার্ম" টেবিল যোগ করা হয়েছে। Fast-forward, Detached HEAD, Index, Upstream, GitHub, Pull Request, Tracking Branch, Bare Repository, Conflict Marker-এর এন্ট্রি যোগ করা হয়েছে — এগুলোর প্রায় সবগুলোই chapter 1-3-এ ইতিমধ্যে শিপ হওয়া টেক্সট থেকে precedent হিসেবে নেওয়া, নতুন করে অনুমান করা হয়নি।
+- **2026-08-07 (chapter 4 prep)** — Chapter 4 (Git on the Server) অনুবাদ শুরুর আগে নতুন টার্ম যোগ করা হয়েছে: Protocol, Authentication, Group, Port, Firewall (transliterate); Daemon, Hook, SSH, Public/Private key, Passphrase, Namespace, Wiki, Merge Request (English-ই থাকবে)। প্যারালাল agent দিয়ে অনুবাদ করার আগে decide করে রাখা হয়েছে, যাতে আলাদা agent আলাদা সিদ্ধান্ত না নেয়।
