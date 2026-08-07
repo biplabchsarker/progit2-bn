@@ -147,6 +147,21 @@ Only go back to previously translated chapters for:
 - grammar or spelling errors,
 - upstream source changes.
 
+## 24. Prefer Native Bangla for Generic (Non-Git) Vocabulary
+
+Git-specific terms follow [GLOSSARY.md](GLOSSARY.md) — that list is authoritative and frozen. But plenty of English words that sneak into translated prose aren't Git terms at all; they're just generic verbs/adjectives (confuse, change, behave, implement, ইত্যাদি) that got carried over out of habit. For these, prefer natural Bangla unless the English form is genuinely dominant in developer speech (the same "config/alias" kind of case already in GLOSSARY.md).
+
+- ❌ মাঝেমধ্যে confuse হবেন → ✅ মাঝেমধ্যে বিভ্রান্ত হবেন
+- ❌ change আসত → ✅ পরিবর্তন আসত
+- ❌ আলাদাভাবে behave করতে পারে → ✅ আলাদাভাবে আচরণ করতে পারে
+- ❌ ফিচারের একটা অংশই implement করে → ✅ ফিচারের একটা অংশই সমর্থন করে
+
+This rule applies going forward (chapter 9 onward); it does not trigger a re-sweep of chapters 1-8 on its own — only fix earlier chapters where GLOSSARY.md is actually being violated (see rule 23).
+
+## 25. প্রতিটি over প্রতিটা
+
+Use "প্রতিটি" (neutral register) rather than "প্রতিটা" (spoken register) in explanatory prose — this already matches the examples used elsewhere in this guide (rules 10 and 18). Chapters 1-8 consistently use "প্রতিটা" throughout and are **not** being retrofitted for this (see rule 23) — this rule governs chapter 9 onward only, so there is a known register seam at the chapter 8/9 boundary.
+
 ## Pull Requests
 
 - Treat each chapter as an independent, reviewable unit — one chapter per PR whenever possible.
