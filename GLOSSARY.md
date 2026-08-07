@@ -141,6 +141,26 @@
 | Build Number | টেকনিক্যাল টার্ম, একক ইউনিট হিসেবে English |
 | Dictator and Lieutenants | নির্দিষ্ট নামের Git workflow model (Centralized/Integration-Manager Workflow-এর মতোই), proper name হিসেবে English |
 | format-patch / mbox | লিটারাল কমান্ড/ফাইল-ফরম্যাটের নাম |
+| Credential (credential helper) | Chapter 3/4/6-এ (remote-branches.asc, protocols.asc, 3-maintaining.asc) থেকেই English-এ প্রতিষ্ঠিত precedent |
+| Hash / SHA-1 | Chapter 1-3-এ (what-is-git.asc, viewing-history.asc, nutshell.asc) থেকেই English-এ প্রতিষ্ঠিত precedent |
+| Hunk | Chapter 1/2-এ (help.asc, recording-changes.asc) থেকেই English-এ প্রতিষ্ঠিত precedent |
+| Stash | Chapter 2/3-এ (undoing.asc, basic-branching-and-merging.asc) থেকেই English-এ প্রতিষ্ঠিত precedent — `git stash` লিটারাল কমান্ডের সাথে ওভারল্যাপ, Checkout/Rebase-এর মতোই ক্যাটেগরি |
+| GPG / Signature / Sign(ed/ing) | Chapter 1/2/5-এ (installing.asc, tagging.asc, maintaining.asc) থেকেই English-এ প্রতিষ্ঠিত precedent — "সাইন করা" ব্যবহার করবেন না, "sign করা"/"signed" |
+| Rerere | Chapter 1/5-এ (first-time-setup.asc, maintaining.asc) থেকেই English-এ প্রতিষ্ঠিত precedent, `git rerere` লিটারাল কমান্ডের নাম |
+| Submodule | নির্দিষ্ট Git feature-এর নাম, Daemon/Hook/Squash-এর মতোই ক্যাটেগরি, `git submodule` লিটারাল কমান্ডের সাথে ওভারল্যাপ |
+| Subtree (merge) | নির্দিষ্ট Git feature-এর নাম, Submodule-এর মতোই ক্যাটেগরি, `git subtree`/`--subtree` লিটারাল কমান্ডের সাথে ওভারল্যাপ |
+| Bisect | নির্দিষ্ট Git feature-এর নাম, `git bisect` লিটারাল কমান্ডের সাথে ওভারল্যাপ, Checkout/Rebase-এর মতোই ক্যাটেগরি |
+| Blame | নির্দিষ্ট Git feature-এর নাম, `git blame` লিটারাল কমান্ডের সাথে ওভারল্যাপ, একই ক্যাটেগরি |
+| Bundle | নির্দিষ্ট Git feature-এর নাম, `git bundle` লিটারাল কমান্ডের সাথে ওভারল্যাপ, একই ক্যাটেগরি |
+| Reflog | নির্দিষ্ট Git mechanism-এর নাম, `git reflog` লিটারাল কমান্ডের সাথে ওভারল্যাপ, Ref/Refspec-এর মতোই ক্যাটেগরি |
+| Worktree | নির্দিষ্ট Git feature-এর নাম, `git worktree` লিটারাল কমান্ডের সাথে ওভারল্যাপ, একই ক্যাটেগরি |
+| Revision | Hash/SHA-1/Ref-এর মতোই low-level plumbing-adjacent noun ক্যাটেগরি, English-ই থাকবে (যেমন "Revision Selection" অধ্যায়ের শিরোনাম) |
+| Replace (git replace) | নির্দিষ্ট Git command/feature-এর নাম, Checkout/Rebase-এর মতোই ক্যাটেগরি |
+| Staged / Unstaged / Untracked (adjective, state-label) | Stage(verb)→স্টেজ করা থেকে আলাদা — chapter 2-এ (recording-changes.asc) থেকেই precedent, state-label হিসেবে English-ই থাকে |
+| Unstage (verb) | "unstage করা" — English verb + করা প্যাটার্ন, Sign up করা/Log in করা-র মতোই |
+| Username / Password | Chapter 3/4/6-এ প্রতিষ্ঠিত precedent অনুযায়ী transliterate — ইউজারনেম / পাসওয়ার্ড |
+| Annotation (file annotation, `git blame`-এর প্রসঙ্গে) | কম ব্যবহৃত internals টার্ম, blob/tree-র মতোই ক্যাটেগরি |
+| Grafting (history grafting) | নির্দিষ্ট টেকনিক্যাল mechanism-এর নাম, একই ক্যাটেগরি |
 
 ## Compound/Derived টার্ম
 
@@ -156,6 +176,7 @@
 | Merge Conflict | মার্জ কনফ্লিক্ট | |
 | Merge Commit | মার্জ কমিট | |
 | Commit History | কমিট ইতিহাস | |
+| Interactive Staging | Interactive স্টেজিং | Staging Area/Stage(verb)-এর প্যাটার্ন মেনে — qualifier "Interactive" English-ই থাকে, base term "স্টেজিং" transliterate হয় |
 
 ## কখনো অনুবাদ বা Transliterate করা হবে না
 
@@ -174,3 +195,5 @@
 - **2026-08-07 (chapter 4 অনুবাদের পর)** — অনুবাদ করার সময় agent-রা যে নতুন টার্ম নিয়ে সিদ্ধান্ত নিয়েছিল, সেগুলো consolidate করে যোগ করা হলো: Server, Service, Setup, Interface, Administration (transliterate); Fork, Issue, Access (standalone), Shell/git-shell, CGI, Instance (English-ই থাকবে); Authenticated/Unauthenticated adjective form। একটা inconsistency ধরা পড়েছিল ("instance" একটা ফাইলে transliterate হয়েছিল, বাকি দুটোয় English ছিল) — majority-এর সাথে মিলিয়ে ঠিক করা হয়েছে।
 - **2026-08-07 (chapter 5 prep)** — Chapter 5 (Distributed Git) অনুবাদ শুরুর আগে ইতিমধ্যে shipped chapter 1-4-এ real precedent চেক করে দেখা গেল Patch, Contributor, Review, Workflow, Release — এই সবগুলোই আগে থেকে English-এ রয়ে গেছে (transliterate করার প্রাথমিক ধারণা ভুল ছিল)। এই precedent মেনে Maintainer, Guideline, Mailing List, Squash, Whitespace, Shortlog, Changelog, Build Number, Dictator and Lieutenants, format-patch/mbox — সবই English-ই রাখা হলো, নতুন করে transliterate না করে।
 - **2026-08-07 (chapter 6 prep + পরে)** — Chapter 6 (GitHub) অনুবাদের আগে Organization, Account, Notification, Token, Avatar, Profile (transliterate) আর Markdown, API, Settings, Webhook, Two-factor, Watch (English) prep করা হয়েছিল। অনুবাদের সময় আরও কিছু যোগ হয়েছে: Team, Subgroup, Member, Snippet, Emoji (transliterate); Owner/Co-owner/Collaborator, Audit Log, Task List, Mention, Ref/Refspec, literal UI button/tab label, access-level label, Sign up/Log in verb, Verified/Unverified, Configuration/Configure noun-verb split (English)।
+- **2026-08-07 (chapter 7-এর পর)** — অনুবাদের সময় agent-রা আরও কিছু judgment call নিয়েছিল, consolidate করে যোগ করা হলো: Staged/Unstaged/Untracked (adjective/state-label, English — Stage verb থেকে আলাদা), Unstage (verb, "unstage করা"), Username/Password (transliterate, precedent-confirmed), Annotation, Grafting (English, internals-category)।
+- **2026-08-07 (chapter 7 prep)** — Chapter 7 (Git Tools) অনুবাদ শুরুর আগে chapter 1-6-এর shipped টেক্সটে real precedent চেক করে Credential, Hash/SHA-1, Hunk, Stash, GPG/Signature/Sign, Rerere — সবই English-এ প্রতিষ্ঠিত পাওয়া গেছে। নতুন টার্ম (আগে আসেনি) — Submodule, Subtree, Bisect, Blame, Bundle, Reflog, Worktree, Revision, Replace — সবই Checkout/Rebase/Daemon-এর প্যাটার্নে English রাখা হলো (নির্দিষ্ট Git feature/command-এর নাম)। Compound টার্ম Interactive Staging → "Interactive স্টেজিং" যোগ করা হয়েছে (Staging Area/Stage verb precedent অনুযায়ী)। PDF Bengali font থিম ফিক্স (theme/pdf/) deprioritize করা হয়েছে — `progit.asc`-এর `:pdf-theme:`/`:pdf-fontsdir:` অ্যাট্রিবিউট revert করে default build pipeline আবার সচল করা হয়েছে; থিম/ফন্ট ফাইলগুলো ভবিষ্যতের জন্য repo-তে থেকে যাচ্ছে।
