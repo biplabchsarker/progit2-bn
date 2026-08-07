@@ -55,10 +55,15 @@
 | Open Source | ওপেন সোর্স | |
 | Version Control | Version Control (ভার্সন কন্ট্রোল) | প্রথমবার উভয় ফর্ম দিন (নিয়ম ৬ দেখুন), এরপর যেকোনো একটা ফর্ম সামঞ্জস্যপূর্ণভাবে ব্যবহার করুন |
 | Protocol | প্রোটোকল | Chapter 4-এ high-frequency core noun (SSH প্রোটোকল, HTTP প্রোটোকল...); অত্যন্ত প্রচলিত বাংলা loanword |
-| Authentication | অথেনটিকেশন | সাধারণ security concept noun, conflict/snapshot-এর মতো একই ক্যাটেগরি |
+| Authentication | অথেনটিকেশন | সাধারণ security concept noun, conflict/snapshot-এর মতো একই ক্যাটেগরি। Verb রূপ: authenticate → অথেনটিকেট করা। Adjective রূপ: authenticated → অথেনটিকেটেড; unauthenticated → "অথেনটিকেশন ছাড়া" (আলাদা un-শব্দ না বানিয়ে phrase দিয়ে) |
 | Group (GitLab-এর top-level org unit, Project-এর মতোই) | গ্রুপ | Project → প্রজেক্ট প্যাটার্নের সাথে সামঞ্জস্য রেখে |
 | Port (network port) | পোর্ট | অত্যন্ত প্রচলিত বাংলা loanword |
 | Firewall | ফায়ারওয়াল | প্রচলিত বাংলা loanword |
+| Server | সার্ভার | Chapter 1-3-এই আগে থেকে এই রূপে ব্যবহৃত (remote-branches.asc), chapter 4-এ formalize করা হলো |
+| Service | সার্ভিস | পোর্ট/ফায়ারওয়াল/প্রোটোকলের মতো একই ক্যাটেগরি — প্রচলিত loanword |
+| Setup (noun, "a small setup") | সেটআপ | verb হিসেবে "সেট আপ করা" আগে থেকেই ব্যবহৃত; noun রূপও একই শব্দ |
+| Interface | ইন্টারফেস | প্রচলিত loanword |
+| Administration | অ্যাডমিনিস্ট্রেশন | প্রচলিত loanword |
 
 ## English/Latin Script-এই থাকবে
 
@@ -87,6 +92,12 @@
 | Namespace | কম ব্যবহৃত internals/GitLab টার্ম, blob/tree-র মতো একই ক্যাটেগরি |
 | Wiki | GitLab UI-তে exact এই বানানেই দেখা যায়, GitHub UI টার্মের (Issues, Settings...) মতোই |
 | Merge Request | GitLab-এর pull request-এর সমতুল্য UI টার্ম — Pull Request-এর মতোই কারণে ইংরেজিতেই থাকবে |
+| Fork | GitHub/GitLab UI-র একটা নির্দিষ্ট action-এর নাম, Pull/Merge Request-এর মতোই ক্যাটেগরি |
+| Issue | GitHub/GitLab UI টার্ম, Wiki-র মতোই ক্যাটেগরি (lowercase-এই লেখা হয়, যেমন "issue তৈরি করা") |
+| Access (standalone noun/verb, "SSH access", "access দেওয়া") | write access/read access/push access কম্পাউন্ডের precedent বাড়িয়ে standalone ব্যবহারেও প্রযোজ্য |
+| Shell / git-shell | Unix concept + literal কমান্ড-নাম, Daemon/Hook-এর মতোই ক্যাটেগরি |
+| CGI | প্রোটোকল/mechanism-এর acronym, SSH-এর মতোই ক্যাটেগরি |
+| Instance ("repository instance", "GitLab instance") | কম ব্যবহৃত general CS noun, blob/tree-র মতোই ক্যাটেগরি — একবার transliterate করার চেষ্টা হয়েছিল (protocols.asc), কিন্তু বাকি chapter 4-এর সাথে মিলিয়ে English-এ ফিরিয়ে আনা হয়েছে |
 
 ## Compound/Derived টার্ম
 
@@ -117,3 +128,4 @@
 - **2026-08-07** — প্রাথমিক glossary তৈরি; chapter 1-3 নতুন convention অনুযায়ী retrofit করা হয়েছে। Fetch, Working Directory, এবং Stage (verb)-এর এন্ট্রি existing প্যাটার্নের সাথে সামঞ্জস্য রেখে যোগ করা হয়েছে।
 - **2026-08-07 (v1.0)** — Glossary freeze করা হলো। "Decision Rationale" সেকশন আর "Compound/Derived টার্ম" টেবিল যোগ করা হয়েছে। Fast-forward, Detached HEAD, Index, Upstream, GitHub, Pull Request, Tracking Branch, Bare Repository, Conflict Marker-এর এন্ট্রি যোগ করা হয়েছে — এগুলোর প্রায় সবগুলোই chapter 1-3-এ ইতিমধ্যে শিপ হওয়া টেক্সট থেকে precedent হিসেবে নেওয়া, নতুন করে অনুমান করা হয়নি।
 - **2026-08-07 (chapter 4 prep)** — Chapter 4 (Git on the Server) অনুবাদ শুরুর আগে নতুন টার্ম যোগ করা হয়েছে: Protocol, Authentication, Group, Port, Firewall (transliterate); Daemon, Hook, SSH, Public/Private key, Passphrase, Namespace, Wiki, Merge Request (English-ই থাকবে)। প্যারালাল agent দিয়ে অনুবাদ করার আগে decide করে রাখা হয়েছে, যাতে আলাদা agent আলাদা সিদ্ধান্ত না নেয়।
+- **2026-08-07 (chapter 4 অনুবাদের পর)** — অনুবাদ করার সময় agent-রা যে নতুন টার্ম নিয়ে সিদ্ধান্ত নিয়েছিল, সেগুলো consolidate করে যোগ করা হলো: Server, Service, Setup, Interface, Administration (transliterate); Fork, Issue, Access (standalone), Shell/git-shell, CGI, Instance (English-ই থাকবে); Authenticated/Unauthenticated adjective form। একটা inconsistency ধরা পড়েছিল ("instance" একটা ফাইলে transliterate হয়েছিল, বাকি দুটোয় English ছিল) — majority-এর সাথে মিলিয়ে ঠিক করা হয়েছে।
