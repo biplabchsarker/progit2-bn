@@ -98,6 +98,21 @@
 | Shell / git-shell | Unix concept + literal কমান্ড-নাম, Daemon/Hook-এর মতোই ক্যাটেগরি |
 | CGI | প্রোটোকল/mechanism-এর acronym, SSH-এর মতোই ক্যাটেগরি |
 | Instance ("repository instance", "GitLab instance") | কম ব্যবহৃত general CS noun, blob/tree-র মতোই ক্যাটেগরি — একবার transliterate করার চেষ্টা হয়েছিল (protocols.asc), কিন্তু বাকি chapter 4-এর সাথে মিলিয়ে English-এ ফিরিয়ে আনা হয়েছে |
+| Patch | Chapter 1-এ (about-version-control.asc: "patch set", "patch") থেকেই English-এ প্রতিষ্ঠিত precedent |
+| Contributor | Chapter 2-এ (remotes.asc: "কোনো contributor আর contribute করছেন না") থেকেই English-এ প্রতিষ্ঠিত precedent |
+| Review / Code Review | Chapter 3/4-এ (workflows.asc, gitlab.asc: "code review-র সময়") থেকেই English-এ প্রতিষ্ঠিত precedent |
+| Workflow | Chapter 1-4 জুড়ে সবসময় English (branching workflows, distributed workflows...) |
+| Release | Chapter 1-4 জুড়ে সবসময় English ("ট্যাগ করা release", "build/release script") |
+| Maintainer | Contributor-এর মতোই "প্রজেক্ট role" ক্যাটেগরি, একই যুক্তিতে English |
+| Guideline | Review/Workflow-এর মতোই generic process-noun ক্যাটেগরি |
+| Mailing List | Infrastructure-এর নাম, GitHub-এর মতোই ক্যাটেগরি |
+| Squash | নির্দিষ্ট interactive-rebase action-এর নাম, Cherry-pick/Fast-forward-এর মতোই ক্যাটেগরি |
+| Whitespace | সাধারণ প্রোগ্রামিং টার্ম, blob/tree-র মতোই ক্যাটেগরি |
+| Shortlog | লিটারাল কমান্ডের নাম (`git shortlog`), Checkout/Rebase-এর মতোই ক্যাটেগরি |
+| Changelog | টেকনিক্যাল convention/ফাইলের নাম |
+| Build Number | টেকনিক্যাল টার্ম, একক ইউনিট হিসেবে English |
+| Dictator and Lieutenants | নির্দিষ্ট নামের Git workflow model (Centralized/Integration-Manager Workflow-এর মতোই), proper name হিসেবে English |
+| format-patch / mbox | লিটারাল কমান্ড/ফাইল-ফরম্যাটের নাম |
 
 ## Compound/Derived টার্ম
 
@@ -129,3 +144,4 @@
 - **2026-08-07 (v1.0)** — Glossary freeze করা হলো। "Decision Rationale" সেকশন আর "Compound/Derived টার্ম" টেবিল যোগ করা হয়েছে। Fast-forward, Detached HEAD, Index, Upstream, GitHub, Pull Request, Tracking Branch, Bare Repository, Conflict Marker-এর এন্ট্রি যোগ করা হয়েছে — এগুলোর প্রায় সবগুলোই chapter 1-3-এ ইতিমধ্যে শিপ হওয়া টেক্সট থেকে precedent হিসেবে নেওয়া, নতুন করে অনুমান করা হয়নি।
 - **2026-08-07 (chapter 4 prep)** — Chapter 4 (Git on the Server) অনুবাদ শুরুর আগে নতুন টার্ম যোগ করা হয়েছে: Protocol, Authentication, Group, Port, Firewall (transliterate); Daemon, Hook, SSH, Public/Private key, Passphrase, Namespace, Wiki, Merge Request (English-ই থাকবে)। প্যারালাল agent দিয়ে অনুবাদ করার আগে decide করে রাখা হয়েছে, যাতে আলাদা agent আলাদা সিদ্ধান্ত না নেয়।
 - **2026-08-07 (chapter 4 অনুবাদের পর)** — অনুবাদ করার সময় agent-রা যে নতুন টার্ম নিয়ে সিদ্ধান্ত নিয়েছিল, সেগুলো consolidate করে যোগ করা হলো: Server, Service, Setup, Interface, Administration (transliterate); Fork, Issue, Access (standalone), Shell/git-shell, CGI, Instance (English-ই থাকবে); Authenticated/Unauthenticated adjective form। একটা inconsistency ধরা পড়েছিল ("instance" একটা ফাইলে transliterate হয়েছিল, বাকি দুটোয় English ছিল) — majority-এর সাথে মিলিয়ে ঠিক করা হয়েছে।
+- **2026-08-07 (chapter 5 prep)** — Chapter 5 (Distributed Git) অনুবাদ শুরুর আগে ইতিমধ্যে shipped chapter 1-4-এ real precedent চেক করে দেখা গেল Patch, Contributor, Review, Workflow, Release — এই সবগুলোই আগে থেকে English-এ রয়ে গেছে (transliterate করার প্রাথমিক ধারণা ভুল ছিল)। এই precedent মেনে Maintainer, Guideline, Mailing List, Squash, Whitespace, Shortlog, Changelog, Build Number, Dictator and Lieutenants, format-patch/mbox — সবই English-ই রাখা হলো, নতুন করে transliterate না করে।
