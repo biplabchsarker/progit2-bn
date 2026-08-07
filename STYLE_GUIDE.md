@@ -1,5 +1,7 @@
 # Pro Git Bangla Translation — Style Guide
 
+**Status: v1.0 (frozen, 2026-08-07)** — see [rule 23](#23-freeze-the-style-guide) before proposing another policy change. Spend effort translating chapters, not re-litigating rules.
+
 Terminology lives in [GLOSSARY.md](GLOSSARY.md), not here. This file covers everything else: philosophy, audience, tone, and the mechanical rules that keep the translation reviewable and consistent as more contributors join.
 
 ## 1. Translation Philosophy
@@ -118,6 +120,30 @@ Before submitting a chapter:
 - [ ] Spelling is consistent.
 - [ ] Grammar has been reviewed by a native Bangla speaker.
 - [ ] Another developer has verified the technical accuracy.
+- [ ] Read each paragraph aloud once — if it sounds like translated English rather than spoken Bangla, rewrite it (catches awkward phrasing better than silent reading).
+- [ ] Reviewed again after a short break, with fresh eyes.
+
+## 21. Translator's Notes
+
+Don't introduce translator's notes into the main text — the goal is a faithful translation, not an annotated one. If a note is absolutely necessary (e.g. a Bangla-specific clarification with no equivalent in the English), it must be clearly marked as a translator's note (e.g. a `[NOTE]` admonition explicitly labeled "অনুবাদকের নোট") and used sparingly — not as a substitute for finding the right natural phrasing.
+
+## 22. Preserve the Author's Voice
+
+Scott Chacon writes in a conversational, approachable style — not academic, not a dry reference manual. Preserve that in Bangla: if the English is light-hearted, let the Bangla be light-hearted too; if it's concise, don't pad it out. This is about tone, distinct from rule 1 (which is about meaning) — a technically accurate translation can still flatten the author's voice if it over-formalizes every sentence.
+
+## 23. Freeze the Style Guide
+
+This guide and GLOSSARY.md are v1.0. From here on:
+
+- Don't revisit earlier chapters just because you found a new preference.
+- Don't alternate between Latin and Bangla script for the same term.
+- Don't tweak wording that already reads fine, just because you found a "slightly better" phrasing.
+
+Only go back to previously translated chapters for:
+- factual mistakes,
+- terminology inconsistencies with GLOSSARY.md,
+- grammar or spelling errors,
+- upstream source changes.
 
 ## Pull Requests
 
