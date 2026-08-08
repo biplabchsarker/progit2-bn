@@ -93,7 +93,8 @@ Write naturally in Bangla, but don't force Bangla punctuation (।) into code or
 
 ## 16. Numbers
 
-Prefer English digits (10, not ১০) for consistency with commands, version numbers, and code examples throughout the technical documentation.
+Prefer Bangla digits (১০, not 10) in translated prose — this reads more naturally in Bangla technical writing.
+This rule applies to prose only. Inside code blocks, command output, version numbers, and any literal text copied verbatim from upstream (e.g. `git 2.28`, SHA-1 hashes, `-1` flags), digits must stay exactly as upstream has them (English), since that content must remain byte-for-byte identical to the original.
 
 ## 17. Use English for GitHub UI Terms
 
